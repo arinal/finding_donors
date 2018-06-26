@@ -12852,11 +12852,11 @@ Look at the graph at the bottom left from the cell above(the visualization creat
 Understanding gradient boosting, there are several terms needed to be understood: ensemble and boosting.</p>
 <p>Ensemble is an algorithm that works by combining many weak learners to become strong learner. Weak learner is basically any machine learning algorithm and is labeled weak because it analyzes only on subset of data e.g. in the case of 4 weak learners, it only analyzes one-fourth of data. The main reason of combining many simple model is because complex models are basically prone to overfitting.</p>
 <p>Those weak learners are combined in such a way that every learner only focusing and become experts at their given subset of data. This way of combining learners is called <strong>boosting</strong>.</p>
-<p><strong>What is A Good Weak Learner?</strong>
+<p><strong>What is a good weak learner?</strong>
 A weak learner is any machine learning algorithm that gives better accuracy than simply guessing. For instance, if you are trying to classify animals at a zoo, you might have an algorithm that can correctly identify zebras most of the time, but it simply guesses for any other animal. That algorithm would be a weak learner because it is better than guessing.</p>
 <p>If you had an algorithm that identified every animal as a zebra, then that probably is not better than guessing and so it would not be a weak learner.</p>
 <p>For boosting problems, the best kinds of weak learners are ones that are very accurate, even if it is only over a limited scope of the problem. For instance the algorithm that correctly identifies zebras would be good. It allows you to confidently identify as least most of the zebras, allowing other weak learners to focus on the remaining animals.</p>
-<p><strong>How Are Weak Learners Combined?</strong>
+<p><strong>How are weak learners combined?</strong>
 Boosting algorithms typically work by solving subsections of the problem, by peeling them away so future boosting iterations can solve the remaining sections.</p>
 <p>Imagine you are hiring people to build your house, and you have 10 different big jobs that need to be done. A great way of doing it would be to get someone who is really good at foundations to build the foundation. Then hire a very good carpenter to focus on the framing. Then hire a great roofer and plumber to focus stage, a small subsection of the project is getting completely solved.</p>
 <p>The takeaway is that weak learners are best combined in a way that allows each one to solve a limited section of the problem. Any machine learning routine can be used as a weak learner. Neural nets, support vector machines or any other would work, but the most commonly used weak learner is the decision tree.</p>
